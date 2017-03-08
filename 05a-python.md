@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> In python a list ```python [] ``` is a data strutuce that is composed of different data types seperated by comas and enclosed in square backets.
+>> In python a list is a data strutuce that is composed of different data types seperated by comas and enclosed in square backets ``` [] ```.  In python a tuple is a data strutuce that is composed of different data types seperated by comas but are enclosed by parenthathese ```()```.  The difference between a tuple and a list is that data in a tuple **cannot** be changed while data in a list can be.  Because of this tuples can be used as keys in dictionaries.  Like tuples dictionary key cannot be changed.
 
 ---
 
