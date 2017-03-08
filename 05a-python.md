@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> In python a list is a data strutuce that is composed of different data types seperated by comas and enclosed in square backets ``` [] ```.  In python a tuple is a data strutuce that is composed of different data types seperated by comas but are enclosed by parenthathese ```()```.  The difference between a tuple and a list is that data in a tuple **cannot** be changed while data in a list can be.  Because of this tuples can be used as keys in dictionaries.  Like tuples dictionary key cannot be changed.
+>> In python a list is a data strutuce that is composed of different data types seperated by comas and enclosed in square backets ` [] `.  In python a tuple is a data strutuce that is composed of different data types seperated by comas but are enclosed by parenthathese `()`.  The difference between a tuple and a list is that data in a tuple **cannot** be changed while data in a list can be.  Because of this tuples can be used as keys in dictionaries.  Like tuples dictionary key cannot be changed.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> As stated in question 1 In python a list is a data strutuce that is composed of different data types seperated by comas and enclosed in square backets ` [] `, but a set is a data strutuce that is composed of different data types seperated by comas and enclosed in curly backets `{}`.  The main differences between a set and a list are that set cannot contain duplicate entries whereas lists can.  Set aer also un-ordered data, consequently unlike list values in sets cannot be indexed; however, sets can be iterated through.  Python sets are designed to act like mathamatical sets whereas list are designed for the easy storage and accessing of data.
 
 ---
 
@@ -28,7 +28,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In python `lambda` is an ananonymous function, which means it is a user function that formally assinged to the variable lambda, `lambda x: x - 2`.  
 
 ---
 
