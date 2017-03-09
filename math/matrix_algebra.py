@@ -130,10 +130,11 @@ except:
 #[ 6 -6]]
 
 try:
-    print(np.dot(B, B))
+    Q = np.dot(B, B)
+    print(np.dot(Q, Q))
 except:
     print('not defined')
-#[[ 1 -2]
+#[[ 1 -4]
 #[ 0  1]]
 
 try:
