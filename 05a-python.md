@@ -40,7 +40,9 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >>Set comprehensions and dictionary comprehensions also exist and follow the same structure:
 
->>Set: 
+>>Set: single = set(['apple', 'boy', 'cowboy', 'door'])
+new_single = [x.upper() for x in single]
+Dictionay: 
 
 ---
 
