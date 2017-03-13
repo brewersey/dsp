@@ -38,11 +38,16 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> A list comprehension is a tool in python that allows a programmer in one line to unpack and transform elements of a list into another list.  It follows the form `y = [f(x) for x in z if (condition)]`.  For examples if I had the list `singles = ['apple', 'boy', 'cowboy', 'door']` and wanted each element of the list to be in all caps we could use the list comprehension `upp = [x.upper() for x in singles]`.  In this example all of the words in list singles would be formatted to uppercase and transfered to the list `upp`.  If we wanted we could have incorporated if statement to specifiy which word we wanted in uppercase we could do so (ie `upp = [x.upper() for x in singles if x == 'door']` in this case `upp` only consists of `'DOOR'` since that was the only element of `singles` that meet the condition).
 
+>> Essential a list comprehension is the combination of `python's` `map` and `filter` functions since:
+>>`numbers = range(1, 11), squares = list(map(lambda x: x * x, numbers)), evens = list(filter(lambda x: x%2 == 0, squares))`
+>>and
+>>`numbers = range(1, 11), compeven = [x * x for x in numbers if (x * x)%2 == 0]`
+>>produce the same results.  However, it is easier to manipulate strings using list comprehensions.
+
 >>Set comprehensions and dictionary comprehensions also exist and follow the same structure:
 
->>Set: single = set(['apple', 'boy', 'cowboy', 'door'])
-new_single = [x.upper() for x in single]
-Dictionay: 
+>>Set: `single = set(['apple', 'boy', 'cowboy', 'door']), new_single = [x.upper() for x in single]`
+Dictionay: `numbers = range(1, 11), squares = {x: x * x for x in numbers}`
 
 ---
 
