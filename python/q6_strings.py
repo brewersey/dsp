@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,7 +17,14 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        return 'Number of donuts: {0:d}'.format(count)
+    else:
+        return 'Number of donuts: many'
+
+number = 5
+breakfast = donuts(number)
+print(breakfast)
 
 
 def both_ends(s):
@@ -37,7 +43,18 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    list_s = [l for l in s]
+    if len(list_s) > 2:
+        new_string = list_s[0] + list_s[1] + list_s[-2] + list_s[-1]
+        new_string = ''.join(new_string)
+    else:
+        new_string = ''
+    
+    return new_string
+
+word = 'spring'
+new_word = both_ends(word)
+print(new_word)
 
 
 def fix_start(s):
@@ -56,7 +73,18 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    list_s = [l for l in s]
+    count = 1
+    while count < len(list_s):
+        if list_s[count] == list_s[0]:
+            list_s[count] = '*'
+        count += 1
+    new_string = ''.join(list_s)
+    return new_string
+
+fs = 'donut'
+new_fs = fix_start(fs)
+print(new_fs)
 
 
 def mix_up(a, b):
@@ -74,8 +102,29 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a_string = [l for l in a]
+    b_string = [l for l in b]
+    
+    z = a_string[0]
+    y = a_string[1]
+    x = b_string[0]
+    w = b_string[1]
+    
+    a_string[0] = x
+    a_string[1] = w
+    b_string[0] = z
+    b_string[1] = y
+    
+    a = ''.join(a_string)
+    b = ''.join(b_string)
+    new_string = ' '.join([a, b])
+    return new_string
 
+first = 'mix'
+second = 'pod'
+new_string = mix_up(first, second)
+print(new_string)
+        
 
 def verbing(s):
     """
@@ -91,9 +140,23 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    list_s = [l for l in s]
+    if len(list_s) >= 3:
+        test1 = list_s[-3:]
+        test1 = ''.join(test1)
+        if test1 == 'ing':
+            list_s.append('ly')
+        else:
+            list_s.append('ing')
+        new_string = ''.join(list_s)
+        return new_string
+    else:
+        return s
 
-
+verb = 'swiming'
+new_string = verbing(verb)
+print(new_string)
+        
 def not_bad(s):
     """
     Given a string, find the first appearance of the substring 'not'
@@ -111,9 +174,25 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
-
+    list_s = s.split()
+    knots = [k for k in enumerate(list_s) if k[1] == 'not']
+    bads = [b for b in enumerate(list_s) if b[1] == 'bad']
+    
+    if len(bads) == 0:
+        return s
+    elif bads[0][0] > knots[0][0]:
+        stop = knots[0][0]        
+        new_string = list_s[:stop]
+        new_string.append('good')
+        new_string = ' '.join(new_string)
+        return new_string
+    else:
+        return s
+    
+phrase = 'This bad tea is not hot'
+new_phrase = not_bad(phrase)
+print(new_phrase)      
+    
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -130,4 +209,32 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+   
+    list_a = [l for l in a] 
+    list_b = [l for l in b]
+    
+    afront = len(list_a)//2 + len(list_a)%2
+    aback = -(len(list_a) - afront) 
+    
+    bfront = len(list_b)//2 + len(list_b)%2
+    bback = -(len(list_b) - bfront)   
+    
+    section_1 = list_a[:afront]
+    section_1 = ''.join(section_1)
+    
+    section_2 = list_b[:bfront]
+    section_2 = ''.join(section_2)
+    
+    section_3 = list_a[aback:]
+    section_3 = ''.join(section_3)
+    
+    section_4 = list_b[bback:]
+    section_4 = ''.join(section_4)
+    
+    new_string = section_1 + section_2 + section_3 +section_4
+    return new_string
+
+a = 'Kitten'
+b = 'Donut'
+c = front_back(a, b)
+print(c)
