@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> Spyder (in spite of the name). I've used it before to learn python.  Usefull keystroke features are: Shit+arrow-key = highlight, command-c = cut and command-v = paste.  I'm in the process of trying add Spyder to the mac desktop as it is on my windows machines.  So far my research suggest that to do so I'll need to have a sepereate installation from that of Anaconda.  Any advice on the topic would be appreciated.  
+>> Spyder (in spite of the name). I've used it before to learn python.  Usefull keystroke features are: Shit+arrow-key = highlight, command-c = cut and command-v = paste.  I'm in the process of trying add Spyder to the mac desktop as it is on my windows machines. 
 
  
