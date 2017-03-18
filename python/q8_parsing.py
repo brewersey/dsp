@@ -7,7 +7,9 @@
 player = [100000,1]
 winner = 'Quakes'
 with open('football.csv', 'r') as f:
-    next(f)
+    header = f.readline()
+    header = header.split(',')
+    print(header)
     for line in f:
         line = line.split(',')
         a = int(line[6])
