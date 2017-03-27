@@ -65,7 +65,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > `xargs` are commands that allow one to construct complex commands for commandline commands.  Here is an example from Wikipedia where xargs are used to find a file path: `find /path -type f -print | xargs rm`
  
 
