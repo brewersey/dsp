@@ -19,7 +19,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd                                                                                   - show current working directory path
+mkdir                                                                                 - creating a directory
+rmdir                                                                                 - deleting a directory
+touch filename                                                                    - creating a file using touch command
+rm filename                                                                       - deleting a file
+mv oldfilename newfilename                                            - renaming a file
+ls -a                                                                                    - listing hidden files
+mv oldDir/oldfilenme newDir/newfilename                     - copying a file from one directory to another
+find . -name "filename" -print                                           - find a file
+help                                                                                    - gets command line help
 
 ---
 
@@ -34,7 +43,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls`                      - list contents of current directory  
+`ls -a`                  - list contents of current directory including hidden contents
+`ls -l`                  - list contents of current directory including permissions
+`ls -lh`                 - list contents of current directory including permissions
+`ls -lah`                - list contents of current directory including permissions including hidden files
+`ls -t`                   - list contents of current directory with newest files first
+`ls -Glp`              - list contents of current directory  with permissions
 
 ---
 
@@ -42,7 +57,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls -m 	Displays the names as a comma-separated list, ls -d Displays only directories, ls -1 	Displays each entry on a line, ls -c	Displays files by file timestamp, ls -C	Displays files in a columnar format (default)
 
 ---
 
