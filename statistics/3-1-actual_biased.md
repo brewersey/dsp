@@ -10,14 +10,14 @@ resp['numkdhh'].dtype
 resp['numkdhh'].hist()
 #calculate and plot PMF for data
 resp_pmf = thinkstats2.Pmf(resp['numkdhh'])
-thinkplot.Hist(resp_pmf)
+thinkplot.Hist(resp_pmf)`
 
-#Select only data from children in class & plot histogram
+>> `#Select only data from children in class & plot histogram
 df_resp = resp['numkdhh']
 nots = df_resp != 0
 df_resp = df_resp[nots]
 df_resp.hist()
 #calculate and plot PMF
 dfresp_pmf = thinkstats2.Pmf(df_resp)
-thinkplot.Hist(dfresp_pmf)
+thinkplot.Hist(dfresp_pmf)`
 
