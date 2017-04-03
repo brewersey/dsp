@@ -90,7 +90,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist operate under the theory that events occur at a set rate, which may or may not be known, while Bayesians operate under the theory that events occur at random.
 
 ---
 
