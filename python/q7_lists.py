@@ -113,10 +113,46 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    new_list = sorted(list1 + list2)
+    new_list = []
+    
+    i = len(list1)
+    j = len(list2)
+    
+    a = 0
+    b = 0
+    count = 0
+    
+    if i > j:
+        while count < j:
+            if list1[a] < list2[b]:
+                new_list.append(list1[a])
+                a += 1
+            else:
+                new_list.append(list2[b])
+                b += 1
+            count = b
+            if a == i:
+                break
+        new_list = new_list + list1[a:] + list2[b:]
+        
+    else:
+        while count < i:
+            if list1[a] < list2[b]:
+                new_list.append(list1[a])
+                a += 1
+            else:
+                new_list.append(list2[b])
+                b += 1
+            count = a
+            if b == j:
+                break
+        new_list = new_list + list2[b:] + list1[a:]
+    
     return new_list
 
 list1 = ['aa', 'xx']
 list2 = ['bb', 'cc', 'zz']
+#list1 = ['aa', 'aa', 'aa', 'bb', 'bb']
+
 new_list = linear_merge(list1, list2)
 print(new_list)
